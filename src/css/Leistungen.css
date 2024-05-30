@@ -121,7 +121,8 @@
 }
 
 /* ----- Responsive mobile code ----- */
-@media only screen and (max-width: 1300px) {
+/* ----- Tablet ----- */
+@media only screen and (max-width: 1250px) {
   #leistungenListe {
     flex-direction: column;
   }
@@ -133,5 +134,16 @@
 
   .leistungenCol {
     align-self: center;
+  }
+}
+
+/* ----- Handy ----- */
+@media only screen and (max-width: 500px) {
+  .title3 {
+    font-size: 3vw;
+  }
+
+  #contentContainer3 h1 {
+    font-size: 7vw;
   }
 }

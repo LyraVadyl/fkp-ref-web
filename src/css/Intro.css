@@ -53,7 +53,8 @@
 }
 
 /* ----- Responsive mobile code ----- */
-@media only screen and (max-width: 1300px) {
+/* ----- Tablet ----- */
+@media only screen and (max-width: 1250px) {
   #contentContainer {
     width: auto;
     flex-direction: column;
@@ -72,8 +73,14 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* ----- Handy ----- */
+@media only screen and (max-width: 500px) {
   #tags {
     width: 90vw;
+    margin-top: -250px;
+    margin-bottom: -50px;
+  }
+  #text h1 {
+    font-size: 7vw;
   }
 }

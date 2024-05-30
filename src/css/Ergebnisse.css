@@ -68,11 +68,23 @@
 }
 
 /* ----- Responsive mobile code ----- */
-@media only screen and (max-width: 1300px) {
+/* ----- Tablet ----- */
+@media only screen and (max-width: 1250px) {
   #contentContainer5 {
     flex-direction: column;
     width: 80vw;
     padding-bottom: 200px;
     margin-top: 100px;
+  }
+}
+
+/* ----- Handy ----- */
+@media only screen and (max-width: 500px) {
+  #title5 {
+    font-size: 3vw;
+  }
+
+  #ergebnisseTitel h2 {
+    font-size: 7vw;
   }
 }

@@ -50,7 +50,8 @@
 }
 
 /* ----- Responsive mobile code ----- */
-@media only screen and (max-width: 1300px) {
+/* ----- Tablet ----- */
+@media only screen and (max-width: 1250px) {
   #contentContainer6 {
     width: 90vw;
     margin-top: 250px;
@@ -63,5 +64,16 @@
 
   #contentContainer7 p {
     width: 90vw;
+  }
+}
+
+/* ----- Handy ----- */
+@media only screen and (max-width: 1250px) {
+  #title6, #title7 {
+    font-size: 3vw;
+  }
+
+  #contentContainer7 h1 {
+    font-size: 7vw;
   }
 }

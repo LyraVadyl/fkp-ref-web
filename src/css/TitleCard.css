@@ -50,13 +50,14 @@ color: #272525;
 
 
 /* ----- Responsive mobile code ----- */
-@media only screen and (max-width: 900px) {
+/* ----- Tablet ----- */
+@media only screen and (max-width: 1250px) {
   #title1 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
   
   #produkt {
-    font-size: 7.5vw;
+    font-size: 5vw;
     margin-bottom: 40px;
     margin-top: 20px;
   }
@@ -65,6 +66,27 @@ color: #272525;
     flex-direction: column;
     align-self: flex-start;
     margin-left: -35px;
+  }
+
+  .infoContainer, .infoName, .infoInhalt {
+    font-size: 2vw;
+  }
+}
+
+/* ----- Handy ----- */
+@media only screen and (max-width: 500px) {
+  #title1 {
+    font-size: 3vw;
+  }
+
+  #produkt {
+    font-size: 8vw;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  #cardInfo {
+    margin-top: 10px;
   }
 
   .infoContainer, .infoName, .infoInhalt {
