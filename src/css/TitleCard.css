@@ -1,0 +1,73 @@
+#card {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  margin-top: 140px;
+}
+
+#title1 {
+  align-self: center;
+  font-family: 'SemiBold';
+  font-size: 14pt;
+  color: #E40B43;
+}
+
+#produkt {
+align-self: center;
+margin-top: 40px;
+margin-bottom: 80px;
+font-family: 'SemiBold';
+font-size: 48pt;
+color: #272525;
+}
+
+#cardInfo {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 36px;
+}
+
+.infoName {
+  font-family: 'Light';
+  font-size: 14pt;
+  color: #272525;
+}
+
+.infoInhalt {
+  font-family: 'SemiBold';
+  font-size: 14pt;
+  margin-left: 8px;
+  color: #272525;
+}
+
+
+/* ----- Responsive mobile code ----- */
+@media only screen and (max-width: 900px) {
+  #title1 {
+    font-size: 3vw;
+  }
+  
+  #produkt {
+    font-size: 7.5vw;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  
+  #cardInfo {
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: -35px;
+  }
+
+  .infoContainer, .infoName, .infoInhalt {
+    font-size: 3vw;
+  }
+}

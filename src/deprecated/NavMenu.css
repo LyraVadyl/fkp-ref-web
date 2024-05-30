@@ -1,0 +1,66 @@
+#navBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+}
+
+#navBar img {
+  align-self: flex-start;
+  margin-top: 16px;
+  margin-left: 80px;
+}
+
+#navOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: -150px;
+}
+
+/*Feste Breite für Optionen weil sonst Verschiebung durch hover Animation*/
+#navOptions div {
+  width: 70px;
+  text-align: center;
+  margin-left: 40px;
+  font-family: Regular;
+  font-size: 13pt;
+  color: #272525;
+  cursor: pointer;
+}
+
+#navOptions div:hover {
+  font-family: 'SemiBold';
+}
+
+#langSwitch {
+  display: flex;
+  align-self: center;
+  margin-right: 80px;
+  margin-left: 40px;
+  font-family: Regular;
+  font-size: 13pt;
+  text-wrap: nowrap;
+  color: #272525;
+}
+
+/* ----- Responsive mobile code ----- */
+#burgerMenu {
+  visibility: hidden;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 50px;
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #navOptions, #langSwitch {
+    visibility: collapse;
+  }
+  #burgerMenu {
+    visibility: visible;
+  }
+}
